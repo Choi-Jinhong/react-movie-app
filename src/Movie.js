@@ -6,10 +6,10 @@ function Movie({ year, title, summary, poster, genres }) {
     return (
         <div className="movie">
             <img src={poster} alt={title} title={title} />
-            <div className="movies_movie">
-                <h3 className="movie_title">{title}</h3>
-                <h5 className="movie_year">{year}</h5>
-                <ul className="genres">
+            <div className="movies__movie">
+                <h3 className="movie__title">{title}</h3>
+                <h5 className="movie__year">{year}</h5>
+                <ul className="movie__genres">
                     {genres.map((genre, idx) =>
                         <li key={idx} className="genres_genre">{genre}</li>
                     )}
